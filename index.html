@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #container {
+            background-color: #f0f8ff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h2>Welcome to the Staff Portal</h2>
+        <h3>Under construction.</h3>
+    </div>
+    <script>
+        let password = "tutorial";
+        (function passcodeprotect() {
+            let passcode = prompt("Enter Staffcode.");
+            while (passcode !== password) {
+                alert("Incorrect, Pleaes try again.");
+                return passcodeprotect();
+            }
+        }());
+        alert('Welcome To The TP..!');
+        document.getElementById("container")
+            .style.display = "block";
+    </script>
+</body>
+</html>
